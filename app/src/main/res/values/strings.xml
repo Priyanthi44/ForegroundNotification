@@ -2,4 +2,17 @@
     <string name="app_name">Notifications</string>
     <string name="startService">Start Service</string>
     <string name="stopService">Stop Service</string>
+    <string name="putExtra">Foreground Service</string>
+    <string name="channelID">"serviceChannel"</string>
+    <string name="dataToSubmit">"Have you got Data to Submit?"</string>
+    <string name="service">"Upload Service"</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="foreground">"Foreground"</string>
+    <string name="background">"Background"</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="message">Uploading Files to the Server</string>
 </resources>

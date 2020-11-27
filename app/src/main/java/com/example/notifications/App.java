@@ -6,7 +6,7 @@ import android.app.NotificationManager;
 import android.os.Build;
 
 public class App extends Application {
-    public static final String CHANNEL_ID= "serviceChannel";
+
 
     @Override
     public void onCreate() {
@@ -16,10 +16,11 @@ public class App extends Application {
 
     private void createNotificationChannel(){
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-            NotificationChannel serviceChannel =new NotificationChannel(CHANNEL_ID,"Upload Service",
+            NotificationChannel serviceChannel =new NotificationChannel(IntentExtra.CHANNEL_ID.key,"Upload Service",
                     NotificationManager.IMPORTANCE_HIGH);
             NotificationManager manager=getSystemService(NotificationManager.class);
             manager.createNotificationChannel(serviceChannel);
         }
+
     }
 }
