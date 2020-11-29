@@ -9,15 +9,15 @@ public enum IntentExtra {
     CONTENT_TITLE(R.string.service),
     CONTENT_MSG(R.string.message),
     FOREGROUND(R.string.foreground),
-    BACKGROUND(R.string.background);
-
-
+    BACKGROUND(R.string.background),
+    NOTIFICATION_ID(R.string.notification_id),
+     NOTIFICATION (R.string.notification);
 
     public final String key;
 
 
     IntentExtra(int putExtra) {
-        key = name().toLowerCase(Locale.getDefault());
+        this.key=putExtra;
     }
 
 

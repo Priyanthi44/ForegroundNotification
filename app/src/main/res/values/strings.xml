@@ -15,4 +15,6 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="message">Uploading Files to the Server</string>
+    <string name="notification_id">"Notification ID"</string>
+    <string name="notification">"Notification"</string>
 </resources>

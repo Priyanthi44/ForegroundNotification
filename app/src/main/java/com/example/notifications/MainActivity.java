@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(IntentExtra.CHANNEL_ID.key);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
     public void startService(View v){
         if(mBinding.checkBox.isChecked()){
             ArchLifecycleApp archLifecycleApp=new ArchLifecycleApp();
